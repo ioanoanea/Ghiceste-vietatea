@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ioanoanea.gicestevietateaclona">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.android.vending.BILLING" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/icon_round"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activities.CorrectActivity"></activity>
+        <activity android:name=".activities.BuyCoinsActivity" />
+        <activity
+            android:name=".activities.HintActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.AskFriendsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.CoinsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.LevelsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.MenuActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-3650822610871452~2036561310" />
+    </application>
+
+</manifest>
